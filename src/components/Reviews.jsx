@@ -1,0 +1,104 @@
+import React from "react";
+import { Star } from "lucide-react";
+
+const REVIEWIMG1 = "/image/review_img1.png";
+const REVIEWIMG2 = "/image/review_img2.png";
+const REVIEWIMG3 = "/image/review_img3.png";
+const REVIEWER1 = "/image/reviewr1.png";
+const REVIEWER2 = "/image/reviewr2.png";
+const REVIEWER3 = "/image/reviewr3.png";
+const REVIEWER4 = "/image/reviewr1.png"
+
+const Reviews = () => {
+  const reviews = [
+    {
+      id: 1,
+      name: "Good Quality",
+      text: "I highly recommend shopping from kicks",
+      rating: 5.0,
+      avatar: REVIEWER1,
+      image: REVIEWIMG1,
+    },
+    {
+      id: 2,
+      name: "Good Quality",
+      text: "I highly recommend shopping from kicks",
+      rating: 5.0,
+      avatar: REVIEWER2,
+      image: REVIEWIMG2,
+    },
+    {
+      id: 3,
+      name: "Good Quality",
+      text: "I highly recommend shopping from kicks",
+      rating: 5.0,
+      avatar: REVIEWER3,
+      image: REVIEWIMG3,
+    },
+  ];
+
+  return (
+    <section className="px-16 py-14 bg-gray-100">
+      {/* HEADER */}
+      <div className="flex items-center justify-between mb-10">
+        <h2 className="text-5xl font-bold uppercase w-147 h-17 Rubik">Reviews</h2>
+
+        <button className="px-8 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition">
+          SEE ALL
+        </button>
+      </div>
+
+      {/* CARDS */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {reviews.map((review) => (
+          <div
+            key={review.id}
+            className="bg-white w-full rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition"
+          >
+            {/* TOP CONTENT */}
+            <div className="p-6">
+              <div className="flex items-start justify-between mb-2">
+                <div>
+                  <h3 className="font-bold text-lg">{review.name}</h3>
+                  <p className="text-gray-600 text-sm">{review.text}</p>
+                </div>
+
+                <img
+                  src={review.avatar}
+                  alt="reviewer"
+                  className="rounded-full object-cover"
+                />
+              </div>
+
+              {/* RATING */}
+              <div className="flex items-center gap-1 mt-3">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    size={16}
+                    className="fill-orange-400 text-orange-400"
+                  />
+                ))}
+                <span className="text-sm font-medium ml-2">
+                  {review.rating}
+                </span>
+              </div>
+            </div>
+
+            {/* IMAGE */}
+            <div className="bg-gray-200">
+              <img
+                src={review.image}
+                alt="product"
+                className="w-107 h-81 object-cover rounded-b-2xl"
+              />
+            </div>
+
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Reviews;
