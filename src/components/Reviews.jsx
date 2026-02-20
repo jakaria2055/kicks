@@ -7,7 +7,7 @@ const REVIEWIMG3 = "/image/review_img3.png";
 const REVIEWER1 = "/image/reviewr1.png";
 const REVIEWER2 = "/image/reviewr2.png";
 const REVIEWER3 = "/image/reviewr3.png";
-const REVIEWER4 = "/image/reviewr1.png"
+const REVIEWER4 = "/image/reviewr1.png";
 
 const Reviews = () => {
   const reviews = [
@@ -40,10 +40,12 @@ const Reviews = () => {
   return (
     <section className="px-16 py-14 bg-gray-100">
       {/* HEADER */}
-      <div className="flex items-center justify-between mb-10">
-        <h2 className="text-5xl font-bold uppercase w-147 h-17 Rubik">Reviews</h2>
+      <div className="flex items-center justify-between mb-6 sm:mb-8 md:mb-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold uppercase w-auto lg:w-147 h-auto lg:h-17 Rubik">
+          Reviews
+        </h2>
 
-        <button className="px-8 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition">
+        <button className="px-4 sm:px-6 lg:px-8 py-1 sm:py-1.5 lg:py-2 bg-blue-600 text-white rounded-md text-xs sm:text-sm lg:text-sm hover:bg-blue-700 transition">
           SEE ALL
         </button>
       </div>
@@ -66,7 +68,7 @@ const Reviews = () => {
                 <img
                   src={review.avatar}
                   alt="reviewer"
-                  className="rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover"
                 />
               </div>
 
@@ -90,10 +92,9 @@ const Reviews = () => {
               <img
                 src={review.image}
                 alt="product"
-                className="w-107 h-81 object-cover rounded-b-2xl"
+                className="w-107 h-48 sm:h-64 md:h-72 lg:h-81 object-cover rounded-b-2xl"
               />
             </div>
-
           </div>
         ))}
       </div>

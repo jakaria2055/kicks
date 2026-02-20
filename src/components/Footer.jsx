@@ -94,7 +94,7 @@ const Footer = () => {
 
         {/* BIG BACKGROUND TEXT */}
         <div className="bg-gray-900 relative">
-          <img src={FOOTERLOGO2} alt="footer logo" className="mx-auto w-315 h-60" />
+          <img src={FOOTERLOGO2} alt="footer logo"  className="mx-auto w-100 sm:w-315 h-auto sm:h-60 object-contain sm:translate-y-4 -translate-y-0"  />
         </div>
       </div>
 
