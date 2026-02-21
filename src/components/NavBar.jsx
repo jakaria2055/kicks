@@ -9,6 +9,7 @@ import {
   Venus,
   X,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const upArrow = "/public/icon/downArrow.png";
 const Logo = "/public/image/Logo.png";
@@ -97,7 +98,7 @@ function NavBar() {
       )}
 
       {/* Navbar */}
-      <div className="sm:w-[500px] md:w-[700px] lg:w-330 w-[90%] h-20 md:h-24 fixed top-4 left-1/2 -translate-x-1/2 bg-white text-black rounded-2xl shadow-lg flex justify-between items-center px-3 md:px-6 lg:px-8 z-40">
+      <div className="sm:w-125 md:w-175 lg:w-330 w-[90%] h-20 md:h-24 fixed top-4 left-1/2 -translate-x-1/2 bg-white text-black rounded-2xl shadow-lg flex justify-between items-center px-3 md:px-6 lg:px-8 z-40">
         {/* Mobile Menu Icon → Only small screen */}
         <div
           className="md:hidden bg-white rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center cursor-pointer"
@@ -121,9 +122,9 @@ function NavBar() {
           </div>
         </div>
 
-        <div>
+        <Link to={"/"}>
           <img className="w-24 md:w-28 lg:w-32 h-6 md:h-7 lg:h-8" src={Logo} alt="logo" />
-        </div>
+        </Link>
 
         <div className="flex items-center gap-2 md:gap-4 lg:gap-6 relative">
           <div className="flex items-center gap-2 md:gap-4 lg:gap-6 relative">
@@ -138,11 +139,11 @@ function NavBar() {
             </button>
 
             {/* Cart → Always visible */}
-            <button className="bg-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full flex items-center gap-2">
+            <Link to={"/cart"} className="bg-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full flex items-center gap-2">
               <div className="bg-yellow-500 rounded-full w-5 h-5 lg:w-6 lg:h-6 flex items-center justify-center text-xs lg:text-sm">
                 0
               </div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
