@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const upArrow = "/public/icon/downArrow.png";
-const Logo = "/public/image/Logo.png";
-const UserIcon = "/public/icon/userIcon.png";
+const upArrow = "/icon/downArrow.png";
+const Logo = "/image/Logo.png";
+const UserIcon = "/icon/userIcon.png";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
