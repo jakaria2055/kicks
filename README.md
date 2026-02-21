@@ -1,16 +1,127 @@
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# **KICKS – Modern E-Commerce Frontend**
 
-Currently, two official plugins are available:
+KICKS is a modern, responsive e-commerce frontend built with **React**, **Vite**, and **Tailwind CSS**.
+The application provides a sleek shopping experience with product browsing, product details, and cart management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:**
+[https://kicks-lime.vercel.app/](https://kicks-lime.vercel.app/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## **🚀 Features**
 
-## Expanding the ESLint configuration
+* Modern responsive UI
+* Product listing & product details
+* Shopping cart interface
+* Category browsing
+* Review section
+* Clean and scalable component structure
+* State management with Zustand
+* API integration using Axios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## **🛠 Tech Stack**
+
+**Frontend**
+
+* React
+* Vite
+* Tailwind CSS
+* React Router DOM
+* Lucide React Icons
+
+**State Management**
+
+* Zustand
+
+**HTTP Client**
+
+* Axios
+
+**Deployment**
+
+* Vercel
+
+---
+
+## **📦 Installation & Setup**
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/kicks_client.git
+cd kicks_client
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## **📁 Project Structure**
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── store/
+ ├── assets/
+ ├── App.jsx
+ └── main.jsx
+```
+
+* **components/** → Reusable UI components
+* **pages/** → Application pages (Home, Product, Cart)
+* **store/** → Zustand state management
+* **assets/** → Static resources
+
+---
+
+## **🌐 API Integration**
+
+Products and categories are fetched from:
+
+[https://api.escuelajs.co/api/v1/](https://fakeapi.platzi.com/en/rest/products/)
+
+---
+
+## **🎯 Goals of the Project**
+
+This project was built to:
+
+* Practice modern React architecture
+* Implement Zustand for state management
+* Build a clean UI using Tailwind CSS
+* Create a production-ready responsive layout
+* Simulate a real-world e-commerce interface
+---
+
+## **📄 License**
+
+This project is for educational and portfolio purposes and for job task.
+
+---
